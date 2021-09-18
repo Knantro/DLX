@@ -1,0 +1,12 @@
+C:\Users\dimas\source\repos\DLX\DLX\bin\Debug\ClassLibrary3.dll
+C:\Users\dimas\source\repos\DLX\DLX\bin\Debug\ClassLibrary3.pdb
+C:\Users\dimas\source\repos\DLX\DLX\obj\Debug\DLX.csprojAssemblyReference.cache
+C:\Users\dimas\source\repos\DLX\DLX\obj\Debug\DLX.csproj.CoreCompileInputs.cache
+C:\Users\dimas\source\repos\DLX\DLX\obj\Debug\ClassLibrary3.dll
+C:\Users\dimas\source\repos\DLX\DLX\obj\Debug\ClassLibrary3.pdb
+C:\Users\dimas\Desktop\DLX\DLX\DLX\bin\Debug\ClassLibrary3.dll
+C:\Users\dimas\Desktop\DLX\DLX\DLX\bin\Debug\ClassLibrary3.pdb
+C:\Users\dimas\Desktop\DLX\DLX\DLX\obj\Debug\DLX.csprojAssemblyReference.cache
+C:\Users\dimas\Desktop\DLX\DLX\DLX\obj\Debug\DLX.csproj.CoreCompileInputs.cache
+C:\Users\dimas\Desktop\DLX\DLX\DLX\obj\Debug\ClassLibrary3.dll
+C:\Users\dimas\Desktop\DLX\DLX\DLX\obj\Debug\ClassLibrary3.pdb
