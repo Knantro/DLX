@@ -11,8 +11,8 @@ namespace DLX {
         }
 
         public void Describe() {
-            Head curr = (Head)root.Right;
-            Node temp = curr.Down;
+            var curr = (Head)root.Right;
+            var temp = curr.Down;
 
             while (!curr.Equals(root)) {
                 Console.WriteLine(curr);
@@ -46,16 +46,16 @@ namespace DLX {
         }
 
         private void BuildColumns(int[,] args) {
-            for (int j = 0; j < args.GetLength(1); j++) {
-                Head head = new Head() {
+            for (var j = 0; j < args.GetLength(1); j++) {
+                var head = new Head() {
                     ColumnNumber = j + 1,
                     Left = GetHeadFromRoot(root),
                 };
                 
                 head.Left.Right = head;
-                for (int i = 0; i < args.GetLength(0); i++) {
+                for (var i = 0; i < args.GetLength(0); i++) {
                     if (args[i, j] == 1) {
-                        Node node = new Node() {
+                        var node = new Node() {
                             Header = head,
                             Up = GetNodeInColumn(head),
                             RowNumber = i + 1,
@@ -73,10 +73,10 @@ namespace DLX {
         }
 
         private void LinkHeadAndLastNodeInColumns(int columnsCount) {
-            Head temp = (Head)root.Right;
+            var temp = (Head)root.Right;
 
-            for (int i = 1; i <= columnsCount; i++) {
-                Node n = GetNodeInColumn(temp);
+            for (var i = 1; i <= columnsCount; i++) {
+                var n = GetNodeInColumn(temp);
                 temp.Up = n;
                 n.Down = temp;
                 temp = (Head)temp.Right;
@@ -84,11 +84,11 @@ namespace DLX {
         }
 
         private void LinkRows(int[,] args) {
-            for (int i = 0; i < args.GetLength(0); i++) {
-                for (int j = 0; j < args.GetLength(1); j++) {
+            for (var i = 0; i < args.GetLength(0); i++) {
+                for (var j = 0; j < args.GetLength(1); j++) {
                     if (args[i, j] == 1) {
-                        Node curr = GetNodeByIndexes(i, j);
-                        int columnOfNextNode = FindColumnNumberOfNextNode(args, i, j);
+                        var curr = GetNodeByIndexes(i, j);
+                        var columnOfNextNode = FindColumnNumberOfNextNode(args, i, j);
 
                         if (columnOfNextNode != -1) {
                             curr.Right = GetNodeByIndexes(i, columnOfNextNode);
@@ -100,7 +100,7 @@ namespace DLX {
         }
 
         private Head GetHeadFromRoot(Head head) {
-            Head h = head;
+            var h = head;
 
             while (h.Right != null) {
                 h = (Head)h.Right;
@@ -110,7 +110,7 @@ namespace DLX {
         }
 
         private Node GetNodeInColumn(Node node) {
-            Node n = node;
+            var n = node;
 
             while (n.Down != null) {
                 n = n.Down;
@@ -120,13 +120,13 @@ namespace DLX {
         }
 
         private Node GetNodeByIndexes(int row, int column) {
-            Head h = root;
+            var h = root;
 
             while (h.ColumnNumber != column + 1) {
                 h = (Head)h.Right;
             }
 
-            Node n = h.Down;
+            var n = h.Down;
             while (n.RowNumber != row + 1) {
                 n = n.Down;
             }
@@ -135,7 +135,7 @@ namespace DLX {
         }
 
         private int FindColumnNumberOfNextNode(int[,] args, int row, int column) {
-            int j = column + 1;
+            var j = column + 1;
 
             while (true) {
                 if (j >= args.GetLength(1) - 1) {

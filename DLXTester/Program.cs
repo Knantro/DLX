@@ -3,9 +3,9 @@ using DLX;
 
 namespace DLXTester {
     class Program {
-        static void Main() {
-            FourLinkedList obj = new FourLinkedList();
-            int[,] args = new int[,] {
+        private static void Main() {
+            var obj = new FourLinkedList();
+            var args = new[,] {
                 {0, 1, 1, 0, 1 },
                 {1, 0, 1, 0, 0 },
                 {0, 0, 0, 1, 1 },

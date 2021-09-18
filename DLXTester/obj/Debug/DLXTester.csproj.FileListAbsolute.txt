@@ -11,10 +11,10 @@ C:\Users\dimas\source\repos\DLX\DLXTester\obj\Debug\DLXTester.pdb
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\DLXTester.exe.config
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\DLXTester.exe
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\DLXTester.pdb
-C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\ClassLibrary3.dll
-C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\ClassLibrary3.pdb
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\obj\Debug\DLXTester.csprojAssemblyReference.cache
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\obj\Debug\DLXTester.csproj.CoreCompileInputs.cache
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\obj\Debug\DLXTester.csproj.CopyComplete
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\obj\Debug\DLXTester.exe
 C:\Users\dimas\Desktop\DLX\DLX\DLXTester\obj\Debug\DLXTester.pdb
+C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\DLX.dll
+C:\Users\dimas\Desktop\DLX\DLX\DLXTester\bin\Debug\DLX.pdb
