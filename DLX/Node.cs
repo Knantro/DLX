@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DLX {
+﻿namespace DLX {
     public class Node {
         public Node Left { get; set; }
         public Node Right { get; set; }
@@ -10,7 +8,7 @@ namespace DLX {
         public Head Header { get; set; }
 
         public override string ToString() =>
-            $"About this Node:\n" +
+            "About this Node:\n" +
             $"Coords = [{RowNumber}, {Header?.ColumnNumber}]\n" +
             $"LeftCoords = [{Left?.RowNumber}, {Left?.Header?.ColumnNumber}]\n" +
             $"RightCoords = [{Right?.RowNumber}, {Right?.Header?.ColumnNumber}]\n" +

@@ -47,18 +47,18 @@ namespace DLX {
 
         private void BuildColumns(int[,] args) {
             for (var j = 0; j < args.GetLength(1); j++) {
-                var head = new Head() {
+                var head = new Head {
                     ColumnNumber = j + 1,
-                    Left = GetHeadFromRoot(_root),
+                    Left = GetHeadFromRoot(_root)
                 };
                 
                 head.Left.Right = head;
                 for (var i = 0; i < args.GetLength(0); i++) {
                     if (args[i, j] == 1) {
-                        var node = new Node() {
+                        var node = new Node {
                             Header = head,
                             Up = GetNodeInColumn(head),
-                            RowNumber = i + 1,
+                            RowNumber = i + 1
                         };
                         head.RowCount++;
                         node.Up.Down = node;

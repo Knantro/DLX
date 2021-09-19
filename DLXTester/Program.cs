@@ -1,5 +1,4 @@
-﻿using System;
-using DLX;
+﻿using DLX;
 
 namespace DLXTester {
     class Program {
