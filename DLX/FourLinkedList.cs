@@ -2,7 +2,7 @@
 
 namespace DLX {
     public class FourLinkedList {
-        private Head root = new Head();
+        private readonly Head _root = new Head();
 
         public void BuildList(int[,] args) {
             BuildColumns(args);
@@ -11,10 +11,10 @@ namespace DLX {
         }
 
         public void Describe() {
-            var curr = (Head)root.Right;
+            var curr = (Head)_root.Right;
             var temp = curr.Down;
 
-            while (!curr.Equals(root)) {
+            while (!curr.Equals(_root)) {
                 Console.WriteLine(curr);
 
                 while (!temp.Equals(curr)) {
@@ -49,7 +49,7 @@ namespace DLX {
             for (var j = 0; j < args.GetLength(1); j++) {
                 var head = new Head() {
                     ColumnNumber = j + 1,
-                    Left = GetHeadFromRoot(root),
+                    Left = GetHeadFromRoot(_root),
                 };
                 
                 head.Left.Right = head;
@@ -66,14 +66,14 @@ namespace DLX {
                 }
 
                 if (j == args.GetLength(1) - 1) {
-                    head.Right = root;
-                    root.Left = head;
+                    head.Right = _root;
+                    _root.Left = head;
                 }
             }
         }
 
         private void LinkHeadAndLastNodeInColumns(int columnsCount) {
-            var temp = (Head)root.Right;
+            var temp = (Head)_root.Right;
 
             for (var i = 1; i <= columnsCount; i++) {
                 var n = GetNodeInColumn(temp);
@@ -120,7 +120,7 @@ namespace DLX {
         }
 
         private Node GetNodeByIndexes(int row, int column) {
-            var h = root;
+            var h = _root;
 
             while (h.ColumnNumber != column + 1) {
                 h = (Head)h.Right;
